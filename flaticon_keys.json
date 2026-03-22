@@ -1,0 +1,71 @@
+{
+  "icon": {
+    "start_block": "trending-icon-packs",
+    "end_block": "popular-styles",
+    "url_pattern": "        <a href=\"",
+    "img_pattern": "src=\"",
+    "name_pattern": "data-name=\""
+  },
+  "sticker": {
+    "start_block": "box-container",
+    "end_block": "stickers-in-action",
+    "url_pattern": "        <a href=\"",
+    "img_pattern": "data-src=\"",
+    "name_pattern": "data-name=\""
+  },
+  "search_icon_alt": {
+    "start_block": "search-data packs-data mg-top-lv3",
+    "end_block": "icon--md icon--go-to-page",
+    "url_pattern": "        <a href=\"",
+    "img_pattern": "src=\"",
+    "name_pattern": "data-name=\""
+  },
+  "types": {
+    "a_ic": {
+      "start_block": "",
+      "end_block": "premium-edge-content",
+      "pattern": "data-png=\"",
+      "cleanup": ["data-src=\"\"", "", "data-src=\"{"]
+    },
+    "ic_f": {
+      "start_block": "",
+      "end_block": "premium-edge-content",
+      "pattern": "data-png=\"",
+      "cleanup": ["data-src=\"\"", "", "data-src=\"{"]
+    },
+    "st": {
+      "start_block": "",
+      "end_block": "pricing/",
+      "pattern": "data-png=\"",
+      "cleanup": []
+    },
+    "ic": {
+      "start_block": "",
+      "end_block": "pricing/",
+      "pattern": "data-png=\"",
+      "cleanup": []
+    },
+    "searching": {
+      "start_block": "",
+      "end_block": "",
+      "pattern": "<img  src=\"",
+      "cleanup": []
+    }
+  },
+  "filters": {
+    "clear_mapicons_types": ["st", "ic"],
+    "clear_mapicons_once_types": ["a_ic", "ic_f", "searching"],
+    "exclude_if_value": "l",
+    "final_value": "l",
+    "text_append": "ic"
+  },
+  "others": {
+    "start_block": "<section class=\"search-result\">",
+    "end_block": "icon--md icon--go-to-page",
+    "url_pattern": "        <a href=\"",
+    "img_pattern": "src=\"",
+    "name_pattern": "data-name=\"",
+    "next_url": "(?<=<a id=\"pagination-more\" class=\"pagination-next bj-button bj-button--primary \" href=\")(.*?)(?=\")"
+}
+
+}

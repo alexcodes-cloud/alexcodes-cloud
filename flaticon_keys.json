@@ -35,6 +35,8 @@
       "end_block": "premium-edge-content",
       "pattern": "data-png=\"",
       "pattern_end": "\"",
+      "svg_pattern": "(?<=data-svg=\")(.*?)(?=\")",
+      "footer_mark": "",
       "cleanup": ["data-src=\"\"", "", "data-src=\"{"]
     },
     "ic_f": {
@@ -42,6 +44,8 @@
       "end_block": "premium-edge-content",
       "pattern": "data-png=\"",
       "pattern_end": "\"",
+      "svg_pattern": "(?<=data-svg=\")(.*?)(?=\")",
+      "footer_mark": "",
       "cleanup": ["data-src=\"\"", "", "data-src=\"{"]
     },
     "st": {
@@ -49,6 +53,8 @@
       "end_block": "pricing/",
       "pattern": "data-png=\"",
       "pattern_end": "\"",
+      "svg_pattern": "",
+      "footer_mark": "",
       "cleanup": []
     },
     "ic": {
@@ -56,6 +62,8 @@
       "end_block": "pricing/",
       "pattern": "data-png=\"",
       "pattern_end": "\"",
+      "svg_pattern": "",
+      "footer_mark": "",
       "cleanup": []
     },
     "searching": {
@@ -63,6 +71,8 @@
       "end_block": "",
       "pattern": "<img  src=\"",
       "pattern_end": "\"",
+      "svg_pattern": "",
+      "footer_mark": "<footer id=\"footer\" class=\"body-footer\">",
       "cleanup": []
     }
   },

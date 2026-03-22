@@ -3,52 +3,66 @@
     "start_block": "trending-icon-packs",
     "end_block": "popular-styles",
     "url_pattern": "        <a href=\"",
+    "url_end": "\"",
     "img_pattern": "src=\"",
-    "name_pattern": "data-name=\""
+    "img_end": "\"",
+    "name_pattern": "data-name=\"",
+    "name_end": "\""
   },
   "sticker": {
     "start_block": "box-container",
     "end_block": "stickers-in-action",
     "url_pattern": "        <a href=\"",
+    "url_end": "\"",
     "img_pattern": "data-src=\"",
-    "name_pattern": "data-name=\""
+    "img_end": "\"",
+    "name_pattern": "data-name=\"",
+    "name_end": "\""
   },
   "search_icon_alt": {
     "start_block": "search-data packs-data mg-top-lv3",
     "end_block": "icon--md icon--go-to-page",
     "url_pattern": "        <a href=\"",
+    "url_end": "\"",
     "img_pattern": "src=\"",
-    "name_pattern": "data-name=\""
+    "img_end": "\"",
+    "name_pattern": "data-name=\"",
+    "name_end": "\""
   },
   "types": {
     "a_ic": {
       "start_block": "",
       "end_block": "premium-edge-content",
       "pattern": "data-png=\"",
+      "pattern_end": "\"",
       "cleanup": ["data-src=\"\"", "", "data-src=\"{"]
     },
     "ic_f": {
       "start_block": "",
       "end_block": "premium-edge-content",
       "pattern": "data-png=\"",
+      "pattern_end": "\"",
       "cleanup": ["data-src=\"\"", "", "data-src=\"{"]
     },
     "st": {
       "start_block": "",
       "end_block": "pricing/",
       "pattern": "data-png=\"",
+      "pattern_end": "\"",
       "cleanup": []
     },
     "ic": {
       "start_block": "",
       "end_block": "pricing/",
       "pattern": "data-png=\"",
+      "pattern_end": "\"",
       "cleanup": []
     },
     "searching": {
       "start_block": "",
       "end_block": "",
       "pattern": "<img  src=\"",
+      "pattern_end": "\"",
       "cleanup": []
     }
   },
@@ -63,9 +77,11 @@
     "start_block": "<section class=\"search-result\">",
     "end_block": "icon--md icon--go-to-page",
     "url_pattern": "        <a href=\"",
+    "url_end": "\"",
     "img_pattern": "src=\"",
+    "img_end": "\"",
     "name_pattern": "data-name=\"",
+    "name_end": "\"",
     "next_url": "(?<=<a id=\"pagination-more\" class=\"pagination-next bj-button bj-button--primary \" href=\")(.*?)(?=\")"
-}
-
+  }
 }

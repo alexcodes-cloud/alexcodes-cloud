@@ -1,5 +1,5 @@
 {
-    "maintenance": "off",
+    "maintenance": "on",
     "maintenance_message": "We are currently under maintenance. Please check back soon.",
-    "maintenance_end_time": 0
+    "maintenance_end_time": 1774384652
 }
